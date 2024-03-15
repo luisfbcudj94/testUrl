@@ -136,13 +136,8 @@ session.DevToolsEventReceived += (sender, e) =>
     }
 
 };
-
-
-
 driver.Navigate().GoToUrl(url);
 
-
-await Task.Delay(TimeSpan.FromSeconds(10));
 
 /* CREATE NEW DICTIONARY */
 
@@ -235,5 +230,3 @@ static void WriteDictionaryToCsv(Dictionary<string, List<JObject>> dictionary, s
         }
     }
 }
-
-Console.ReadLine();
