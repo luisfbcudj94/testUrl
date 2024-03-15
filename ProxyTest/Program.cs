@@ -137,12 +137,7 @@ async Task initSessionChrome()
     processingData(dataToExcelRequest, dataToExcelResponse);
 }
 
-
-
-
-
 /* CREATE NEW DICTIONARY */
-
 void processingData(Dictionary<string, List<JObject>> dataToExcelRequest, Dictionary<string, List<JObject>> dataToExcelResponse)
 {
     Dictionary<string, List<JObject>> combinedDictionary = new Dictionary<string, List<JObject>>();
@@ -165,8 +160,6 @@ void processingData(Dictionary<string, List<JObject>> dataToExcelRequest, Dictio
 
     WriteDictionaryToCsv(combinedDictionary, csvFilePath);
 }
-
-
 
 static List<JObject> InterleaveLists(List<JObject> list1, List<JObject> list2)
 {
