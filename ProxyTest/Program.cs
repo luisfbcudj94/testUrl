@@ -234,22 +234,27 @@ static List<JObject> InterleaveLists(List<JObject> list1, List<JObject> list2)
 
 static void WriteDictionaryToCsv(Dictionary<string, List<JObject>> dictionary, string filePath)
 {
+    var existsFile = File.Exists(filePath);
+
     var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
     {
-        HasHeaderRecord = true,
+        //HasHeaderRecord = !existsFile,
         Delimiter = ","
     };
 
-    using (var writer = new StreamWriter(filePath))
+    using (var writer = new StreamWriter(filePath, append: true))
     using (var csv = new CsvWriter(writer, csvConfig))
     {
-        var allKeys = dictionary.Keys.ToList();
+        if (!existsFile)
+        {
+            csv.WriteField("Request Id");
+            csv.WriteField("Action");
+            csv.WriteField("URL");
+            csv.WriteField("Status Code");
+            csv.NextRecord();
+        }
 
-        csv.WriteField("Request Id");
-        csv.WriteField("Action");
-        csv.WriteField("URL");
-        csv.WriteField("Status Code");
-        csv.NextRecord();
+        var allKeys = dictionary.Keys.ToList();
 
         foreach (var key in allKeys)
         {
