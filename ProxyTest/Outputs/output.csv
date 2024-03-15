@@ -1,0 +1,15 @@
+Request Id,Action,URL,Status Code
+8770040667B0CFB8735B26D0CEF12740,Request,albertsons.okta.com/oauth2/ausp6soxrIyPrm8rS2p6/v1/authorize?client_id=0oap6ku01XJqIRdl42p6&response_type=code&scope=openid%20profile%20email%20offline_access&redirect_uri=https://www.safeway.com/bin/safeway/unified/sso/authorize&state=wasteful-stem-rabid-join&nonce=1d5ce452-f925-461a-92a5-c7f22521b11d&prompt=none,
+8770040667B0CFB8735B26D0CEF12740,Response,,302
+8770040667B0CFB8735B26D0CEF12740,Request,www.safeway.com/bin/safeway/unified/sso/authorize?state=wasteful-stem-rabid-join&error=login_required&error_description=The+client+specified+not+to+prompt%2C+but+the+user+is+not+logged+in.,
+8770040667B0CFB8735B26D0CEF12740,Response,,403
+0BFBC433B922418CE6692BE1E97257E8,Request,github.com/luisfbcudj94/testUrl/blob/main/ProxyTest/Program.cs,
+0BFBC433B922418CE6692BE1E97257E8,Response,,200
+6DE49325CA146F3990D21D4FBD958FF0,Request,mail.google.com/mail/u/0/?pli=1,
+6DE49325CA146F3990D21D4FBD958FF0,Response,,302
+6DE49325CA146F3990D21D4FBD958FF0,Request,accounts.google.com/ServiceLogin?service=mail&passive=1209600&osid=1&continue=https://mail.google.com/mail/u/0/?pli%3D1&followup=https://mail.google.com/mail/u/0/?pli%3D1&emr=1,
+6DE49325CA146F3990D21D4FBD958FF0,Response,,302
+6DE49325CA146F3990D21D4FBD958FF0,Request,accounts.google.com/InteractiveLogin?continue=https://mail.google.com/mail/u/0/?pli%3D1&emr=1&followup=https://mail.google.com/mail/u/0/?pli%3D1&osid=1&passive=1209600&service=mail&ifkv=ATuJsjzJbQPF-kb1JvM5WOeB7ElqmMm9au9gYPBmeL4-l9ftenTK3TTTp0fa7pcMf_P9SaCHEndr2A,
+6DE49325CA146F3990D21D4FBD958FF0,Response,,302
+6DE49325CA146F3990D21D4FBD958FF0,Request,accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Fpli%3D1&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Fpli%3D1&ifkv=ATuJsjwhszz0b7VivTb1nqEK6DMLXPTWjOyRAWeN4236bI8etqCH5Jp-cE61k_6_dB1YrPL2Nly_&osid=1&passive=1209600&service=mail&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-2113648409%3A1710535486009039,
+6DE49325CA146F3990D21D4FBD958FF0,Response,,200

@@ -13,12 +13,13 @@ using System;
 using System.Globalization;
 
 
-var urlFilePath = "url.txt";
+var urlFilePath = "../../../Inputs/url.txt";
+var urlOutputPath = "../../../Outputs/output.csv";
+
 string[] urls = File.ReadAllLines(urlFilePath);
 
 ChromeOptions options = new ChromeOptions();
 options.AddArgument("--disable-features=IsolateOrigins,site-per-process");
-options.BinaryLocation = @"C:\Users\aleja\Downloads\chrome-win64\chrome.exe";
 options.AddArguments("disable-features=NetworkService");
 options.AddArguments("--disable-web-security");
 options.AddArguments("--allow-running-insecure-content");
@@ -156,9 +157,7 @@ void processingData(Dictionary<string, List<JObject>> dataToExcelRequest, Dictio
         combinedDictionary.Add(key, combinedJObjects);
     }
 
-    string csvFilePath = "output.csv";
-
-    WriteDictionaryToCsv(combinedDictionary, csvFilePath);
+    WriteDictionaryToCsv(combinedDictionary, urlOutputPath);
 }
 
 static List<JObject> InterleaveLists(List<JObject> list1, List<JObject> list2)
