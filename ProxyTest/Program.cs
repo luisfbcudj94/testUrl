@@ -135,6 +135,7 @@ async Task initSessionChrome()
     };
 
     driver.Navigate().GoToUrl(url);
+    await Task.Delay(500);
     processingData(dataToExcelRequest, dataToExcelResponse);
 }
 
